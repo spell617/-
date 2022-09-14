@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>picture</title>
+</head>
+<body>
+    <center><h1>Input Number</h1></center>
+    <center>
+        <input id="imgNum" type="text">
+        <button onclick="searchingPicture()">searching</button><br>
+        <img src="./basic.jpg" id="img">
+    </center>
+    <script>
+        function searchingPicture(){
+            event.preventDefault();
+            const imgNum = document.getElementById("imgNum").value;
+            if(imgNum == "a1"){
+                document.getElementById("img").src="./a1.jpg";
+            }
+            else if(imgNum == "a2"){
+                document.getElementById("img").src="./a2.jpg";
+            }
+        }
+    </script>
+</body>
+</html>
